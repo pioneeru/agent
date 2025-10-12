@@ -1,5 +1,5 @@
 com.instana.plugin.clickhouse:
-  enabled: false
+  enabled: true
   user:
     valueFrom:
       secretKeyRef:
