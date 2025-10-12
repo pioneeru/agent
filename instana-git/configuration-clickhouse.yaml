@@ -1,15 +1,15 @@
 com.instana.plugin.clickhouse:
   enabled: true
   user:
-    valueFrom:
-      secretKeyRef:
-        name: passwords
-        key: clickhouseuser
+    configuration_from:
+      type: env
+      env_name: USER
+      # default_value: ""
   password:
-    valueFrom:
-      secretKeyRef:
-        name: passwords
-        key: clickhousepassword
+    configuration_from:
+      type: env
+      env_name: CLICKHOUSE_PASSWORD
+      # default_value: ""
   protocol: http   # 'http' or 'https'
   host: localhost  # the host name or IP of the ClickHouse server
   httpPort: 8123   # the port of the ClickHouse server
