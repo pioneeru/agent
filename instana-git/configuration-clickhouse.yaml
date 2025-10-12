@@ -8,12 +8,8 @@ com.instana.plugin.clickhouse:
     configuration_from:
       type: agent_env
       env_name: CLICKHOUSE_PASSWORD
-#  protocol: http   # 'http' or 'https'
-#  host: localhost  # the host name or IP of the ClickHouse server
-#  httpPort: 8123   # the port of the ClickHouse server
   tracingEnabled: false
   profilingEnabled: false
-  clusterName: instana
-  poll_rate: 5 #Values are in seconds. Default Value 5 Sec.
+  poll_rate: 10 #Values are in seconds. Default Value 5 Sec.
   monitorTables:    # more in-depth metrics for these tables
     - 'shared.calls_v3'
