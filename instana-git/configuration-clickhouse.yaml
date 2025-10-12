@@ -4,12 +4,10 @@ com.instana.plugin.clickhouse:
     configuration_from:
       type: agent_env
       env_name: CLICKHOUSE_USER
-      # default_value: ""
   password:
     configuration_from:
       type: agent_env
       env_name: CLICKHOUSE_PASSWORD
-      # default_value: ""
   protocol: http   # 'http' or 'https'
   host: localhost  # the host name or IP of the ClickHouse server
   httpPort: 8123   # the port of the ClickHouse server
