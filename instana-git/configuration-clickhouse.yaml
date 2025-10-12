@@ -2,12 +2,12 @@ com.instana.plugin.clickhouse:
   enabled: true
   user:
     configuration_from:
-      type: env
+      type: agent_env
       env_name: CLICKHOUSE_USER
       # default_value: ""
   password:
     configuration_from:
-      type: env
+      type: agent_env
       env_name: CLICKHOUSE_PASSWORD
       # default_value: ""
   protocol: http   # 'http' or 'https'
