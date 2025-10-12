@@ -3,7 +3,7 @@ com.instana.plugin.clickhouse:
   user:
     configuration_from:
       type: env
-      env_name: USER
+      env_name: CLICKHOUSE_USER
       # default_value: ""
   password:
     configuration_from:
