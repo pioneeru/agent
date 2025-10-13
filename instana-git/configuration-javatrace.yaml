@@ -1,3 +1,4 @@
+# Java trace config
 com.instana.plugin.javatrace:
    instrumentation:
      enabled: false
