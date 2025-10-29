@@ -2,3 +2,10 @@
 com.instana.plugin.javatrace:
    instrumentation:
      enabled: false
+
+com.instana.tracing:
+  stack.filter.error.enabled:
+    configuration_from:
+      type: env
+      env_name: INSTANA_TRACING_STACK_FILTER_ERROR_ENABLED
+      default_value: true
