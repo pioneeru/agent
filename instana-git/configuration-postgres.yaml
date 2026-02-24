@@ -1,0 +1,12 @@
+com.instana.plugin.postgresql:
+  user: 
+    configuration_from:
+      type: agent_env
+      env_name: POSTGRES_USER
+  password:
+    configuration_from:
+      type: agent_env
+      env_name: POSTGRES_PASSWORD
+  database: '' # by default PostgreSQL will use 'user' as database to connect to.
+  poll_rate: 10 #Values are in seconds. Default Value 1 Sec.
+
