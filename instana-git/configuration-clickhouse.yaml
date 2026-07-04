@@ -1,5 +1,9 @@
 com.instana.plugin.clickhouse:
   enabled: true
+  protocol: http   # 'http' or 'https'
+  #host: localhost  # the host name or IP of the ClickHouse server
+  httpPort: 8123   # the port of the ClickHouse server
+  clusterName: local
   user:
     configuration_from:
       type: agent_env
